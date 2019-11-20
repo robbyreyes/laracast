@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Post;
+use App\Users;
 use App\AdminUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -20,7 +20,7 @@ class PostsController extends Controller
         // $users = DB::table('posts')->get();
         // $posts = Post::all()->paginate(15);
         // $posts = Post::orderBy('id', 'desc')->paginate(10); //pagination
-        $posts = Post::all(); 
+        $posts = Users::all(); 
         // $po = var_dump($posts);
         // $au = AdminUser::all();
         return view('posts.index')->with('posts', $posts);

@@ -9,7 +9,7 @@
         </div>
         
     @endforeach
-    {{ $posts->links() }}
+    
     @else
     <h2>xd</h2>
     @endif
